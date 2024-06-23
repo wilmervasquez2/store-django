@@ -1,0 +1,26 @@
+# Archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos y carpetas de Python
+*.py[cod]
+__pycache__/
+*.so
+
+# Entorno virtual
+venv/
+env/
+
+# Archivos de configuración del entorno
+.env
+
+# Archivos y carpetas de Django
+db.sqlite3
+/media
+/static
+
+# Archivos de herramientas y editores
+.idea/
+.vscode/
+.pylint.d/
+.mypy_cache/
