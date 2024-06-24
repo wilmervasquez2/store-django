@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
+  <title>Contact</title>
+</head>
+<body>
+  <main class="container">
+    <fieldset>
+      <h1>Contactanos</h1>
+    
+      <form action="/contact/" method="POST">
+        {% csrf_token %}
+        <p>Asunto: <input type="text" name="issue"></p>
+        <p>Email: <input type="text" name="email"></p>
+        <p>Mensaje: <textarea type="text" name="message"></textarea></p>
+        <button type="submit">Enviar</button>
+      </form>
+    </fieldset>
+    <p><a href="/search/">Ir a busqueda</a></p>
+  </main>
+</body>
+</html>

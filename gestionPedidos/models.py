@@ -15,6 +15,8 @@ class Articles(models.Model):
   section = models.CharField(max_length = 20)
   price = models.IntegerField(verbose_name="Precio")
 
+  def toDict(self):
+    return {'name': self.name, 'section': self.section}
   def __str__(self):
     return f"Nombre: {self.name}, Sección: {self.section}, Precio: {self.price}"
 
